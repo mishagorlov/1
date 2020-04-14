@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Виртуальная лаборатория | ФМФИ</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="wow-animation/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+$(document).ready(function(){
+$("a[href*=#]").on("click", function(e){
+var anchor = $(this);
+$('html, body').stop().animate({
+scrollTop: $(anchor.attr('href')).offset().top
+}, 1777);
+e.preventDefault();
+return false;
+});
+});
+</script>
+  <section class="main_section">
+    <header id="header" class="header wow fadeInDown">
+      <div class="container">
+        <div class="row header__line">
+          <div class="col-xl-3 col-lg-3">
+            <div class="logo d-flex"><a href="index.html"><img src="img/logo.svg" alt="" class="logo_img"></a></div>
+          </div>
+          <div class="col-xl-7 col-lg-9 menu__block d-flex">
+            <div class="menu">
+              <ul class="menu__list d-flex">
+                <li class="menu__item">
+                  <a href="#product">О продукте</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#how-it-work">Как это работает</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#contacts">Контакты</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#download">
+                    <div class="but d-flex">
+                      <h3 class="but__text">Попробовать</h3>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container main__container d-flex wow fadeIn">
+      <div class="row center__content">
+        <div class="col-lg-5 main__for__button">
+          <div class="title__head">
+            <h1>Мы создали</h1>
+          </div>
+          <div class="title__blue-head">
+            <h1>Виртуальную лабораторию</h1>
+          </div>
+          <div class="title__text">
+            <p>Приложение, которое позволяет провести дорогостоящие или труднодоступные физические эксперименты прямо на твоем смартфоне.</p>
+          </div>
+          <a href="#download">
+            <div class="but d-flex">
+              <h3 class="but__text">Попробовать</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-7">
+          <div class="bg__image"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features_section" id="product">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-8 col-lg-10">
+          <div class="title__center">
+            <h2>Виртуальная лаборатория</h2>
+          </div>
+          <div class="text__center">
+            <p>Это кроссплатформенная программа для проведения лабораторных работ. На данный момент доступен пилотный пример лабораторной работы по молекулярной физике “Распределение молекул по скоростям”. В перспективе, виртуальной может стать любая лабораторная работа по любой школьной дисциплине.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row blocks__features">
+        <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="rect__3col d-flex wow fadeIn" data-wow-offset="300">
+          <img src="img/crayon.svg" alt="" class="rect__icon">
+          <h3 class="rect__title">Кроссплатформенность и гибкая настройка</h3>
+          <p class="rect__text">программа доступна как для ПК, так и для мобильных устройств, точная настройка графики</p>
+        </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="rect__3col d-flex wow fadeIn" data-wow-offset="300" data-wow-delay="0.2s">
+          <img src="img/tap.svg" alt="" class="rect__icon">
+          <h3 class="rect__title">Режим дополненной реальности</h3>
+          <p class="rect__text">в мобильном приложении лабораторную работу можно провести прямо перед собой</p>
+        </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="rect__3col d-flex wow fadeIn" data-wow-offset="300" data-wow-delay="0.4s">
+          <img src="img/book.svg" alt="" class="rect__icon">
+          <h3 class="rect__title">Методические рекомендации</h3>
+          <p class="rect__text">представлены в электронном виде и доступны непосредственно в приложении</p>
+        </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="rect__3col d-flex wow fadeIn" data-wow-offset="300" data-wow-delay="0.6s">
+          <img src="img/student.svg" alt="" class="rect__icon">
+          <h3 class="rect__title">Познавательный интерес учащихся</h3>
+          <p class="rect__text">повышается, благодаря необходимым современным средствам обучения</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="scenaries_section" id="how-it-work">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <div class="title__center">
+            <h2>Как она работает</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-around small__settings">
+          <div class="block__ellipse d-flex">
+            <div class="ellipse d-flex">
+              <img src="img/cubes.svg" alt="" class="ellipse__icon">
+            </div>
+            <p class="ellipse__holder">Создается 3D модель лабораторной установки</p>
+          </div>
+          <hr class="horizontal">
+          <div class="block__ellipse d-flex">
+            <div class="ellipse d-flex">
+              <img src="img/software.svg" alt="" class="ellipse__icon">
+            </div>
+            <p class="ellipse__holder">Создаются скрипты (подпрограммы) для управления лабораторной установкой</p>
+          </div>
+          <hr class="horizontal">
+          <div class="block__ellipse d-flex">
+            <div class="ellipse d-flex">
+              <img src="img/virtual-reality.svg" alt="" class="ellipse__icon">
+            </div>
+            <p class="ellipse__holder">Все это загружается в оболочку (пользовательский интерфейс)</p>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-8 col-lg-10">
+          <div class="scenaries__title">
+            <p>Существует множество возможных сценариев работы с приложением. Все они строятся на основании какой-либо проблемы, связанной с реальной лабораторной работой. Некоторые варианты приведены ниже.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-8 col-lg-11 d-flex scenaries__item">
+          <img src="img/point.svg" alt="" class="icon__point">
+          <p class="point__text">Отсутствие необходимой лабораторной установки из-за недостаточной оснащенности кабинета физики</p>
+        </div>
+        <div class="col-xl-8 col-lg-11 d-flex scenaries__item">
+          <img src="img/point.svg" alt="" class="icon__point">
+          <p class="point__text">Имеющееся лабораторное оборудование слишком неудобное, громоздкое или не позволяет наглядно провести демонстрацию</p>
+        </div>
+        <div class="col-xl-8 col-lg-11 d-flex scenaries__item">
+          <img src="img/point.svg" alt="" class="icon__point">
+          <p class="point__text">В условиях дистанционного обучения лабораторные работы никогда не проводились ввиду отсутствия такой возможности</p>
+        </div>
+        <div class="col-xl-8 col-lg-11 d-flex scenaries__item">
+          <img src="img/point.svg" alt="" class="icon__point">
+          <p class="point__text">Случаи, когда подготовка к демонстрации занимает больше времени, чем сама демонстрация</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="download_section"></section>
+  <section class="download_section" id="download">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-8 col-lg-10">
+          <div class="title__center">
+            <h2>Доступные версии</h2>
+          </div>
+          <div class="text__center">
+            <p>Виртуальная лаборатория - кроссплатформенная программа. Но на данный момент под некоторые платформы разработка ещё ведется. Как только работа над ними будет завершена, они поступят в общий доступ в данный раздел.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="rect__download">
+            <img src="img/windows-os.svg" alt="" class="download__icon">
+            <h2>Windows</h2>
+            <div class="download__features">
+              <ul class="download__list">
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">не требует установки (скачать - запустить)</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">электронная форма отчета о лабораторной работе</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">реалистичная трехмерная модель опыта</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">методические рекомендации внутри программы</p>
+                </li>
+              </ul>
+            </div>
+            <a href="https://yadi.sk/d/qFtZqsZXbHMp1A" target="_blank">
+              <div class="but_windows d-flex">
+                <h3 class="but-windows__text">Скачать</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="rect__download">
+            <img src="img/android-os.svg" alt="" class="download__icon">
+            <h2>Android</h2>
+            <div class="download__features">
+              <ul class="download__list">
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">доступен режим дополненной реальности</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">электронная форма отчета о лабораторной работе</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">гибкие графические настройки</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">методические рекомендации внутри программы</p>
+                </li>
+              </ul>
+            </div>
+            <a href="https://yadi.sk/d/qC1JGr3JYivB-A" target="_blank">
+              <div class="but_android d-flex">
+                <h3 class="but-windows__text">Скачать</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="rect__download">
+            <img src="img/html-os.svg" alt="" class="download__icon">
+            <h2>Web</h2>
+            <div class="download__features">
+              <ul class="download__list">
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">доступ непосредственно с сайта программы</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">электронная форма отчета о лабораторной работе</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">реалистичная трехмерная модель опыта</p>
+                </li>
+                <li class="list__item d-flex">
+                  <img src="img/point.svg" alt="" class="icon__point__download">
+                  <p class="point__text">методические рекомендации внутри программы</p>
+                </li>
+              </ul>
+            </div>
+            <a href="#">
+              <div class="but_disable d-flex">
+                <h3 class="but-windows__text disable">В разработке</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts-section" id="contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <div class="white__title">
+            <h2>Контакты</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 contacts__block">
+          <h3 class="contacts__title">Адрес</h3>
+          <p class="contacts__text">Самара, ул. Антонова-Овсеенко, 26<br>Самарский государственный социально-педагогический университет</p>
+        </div>
+        <div class="col-lg-4 contacts__block">
+          <h3 class="contacts__title">E-mail</h3>
+          <p class="contacts__text">sgspu.laboratory@gmail.com</p>
+        </div>
+        <div class="col-lg-4 contacts__block">
+          <h3 class="contacts__title">Разработчик</h3>
+          <p class="contacts__text">pockets.gallery@gmail.com</p>
+          <div class="dev-icon__block d-flex justify-content-around">
+            <a href="https://www.linkedin.com/in/gorlov-mike-3161841a7" target="_blank">
+              <img src="img/linkedin.svg" alt="" class="dev-icon__item">
+            </a>
+            <a href="https://www.behance.net/mikhagorlo6fc5" target="_blank">
+              <img src="img/behance.svg" alt="" class="dev-icon__item">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100025395304301" target="_blank">
+              <img src="img/fb.svg" alt="" class="dev-icon__item">
+            </a>
+            <a href="https://dribbble.com/grolov_m" target="_blank">
+              <img src="img/dribbble.svg" alt="" class="dev-icon__item">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 footer__content d-flex">
+          <h3 class="footer__title">GORLOV</h3>
+          <p class="footer__text">All rights reserved. Samara. СГСПУ</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="wow-animation/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>

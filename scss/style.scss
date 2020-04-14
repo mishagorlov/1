@@ -1,0 +1,496 @@
+$headerColor: #363636;
+$whiteColor: #ffffff;
+$mainColor1: #00b2ff;
+$mainColor2: #00a4ea;
+$textColor: #6d6d6d;
+$winButColor1: #579add;
+$winButColor2: #4987ce;
+$androidButColor1: #78d67f;
+$androidButColor2: #3fc448;
+$headFontFamily: 'Montserrat', sans-serif;
+$textFontFamily: 'Raleway', sans-serif;
+
+@mixin h3_style {
+  font-family: $headFontFamily;
+  font-size: 16px;
+  font-weight: 700;
+}
+@mixin p_style {
+  font-family: $headFontFamily;
+  font-size: 16px;
+  line-height: 20px;
+}
+@mixin inblock_p_style {
+  font-family: $headFontFamily;
+  font-size: 14px;
+  color: $textColor;
+  line-height: 18px;
+}
+
+// Specification
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+// Header
+
+.header {
+  height: 12%;
+}
+.header__line {
+  padding-top: 30px;
+}
+.menu__list {
+  justify-content: flex-end;
+  align-items: baseline;
+}
+.menu__item {
+  padding-left: 20px;
+}
+.menu__item a {
+  @include h3_style;
+  color: $headerColor;
+  text-decoration: none;
+  &:hover {
+    color: $mainColor1;
+    transition: .3s;
+  }
+}
+.but {
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 203px;
+  height: 54px;
+  &:hover {
+    h3 {
+      color: #E4E90D;
+      transition: .3s;
+    }
+  }
+  border-radius: 83px;
+  box-shadow: 1px 2px 20px 0 rgba(0, 148, 255, 0.58);
+  background: linear-gradient(155.2deg, $mainColor1 19.76%, $mainColor2 75.42%);
+}
+.but__text {
+  @include h3_style;
+  color: $whiteColor;
+  text-decoration: none;
+}
+.menu__block {
+  margin-left: auto;
+}
+
+// Main screen
+
+.main_section {
+  height: 100%;
+  align-items: center;
+}
+.main__container {
+  height: 88%;
+  align-items: center;
+  flex-direction: column;
+}
+.title__head {
+  padding-top: 160px;
+  padding-bottom: 13px;
+  h1 {
+  font-family: $headFontFamily;
+  font-weight: 700;
+  color: $headerColor;
+  }
+}
+.title__blue-head {
+  padding-bottom: 30px;
+  h1 {
+  font-family: $headFontFamily;
+  font-weight: 700;
+  color: $mainColor1;
+  }
+}
+.title__text {
+  padding-bottom: 40px;
+  p {
+  @include p_style;
+  color: $textColor;
+  }
+}
+.bg__image {
+  width: auto;
+  height: 100%;
+  background-image: url(../img/main.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 80%;
+}
+.main__for__button a {
+  @include h3_style;
+  color: $headerColor;
+  text-decoration: none;
+  &:hover {
+    color: $mainColor1;
+    transition: .3s;
+  }
+}
+
+// Feature section
+
+.title__center {
+  padding-top: 50px;
+  text-align: center;
+  h2 {
+    color: $headerColor;
+    font-family: $headFontFamily;
+  }
+}
+.white__title {
+  padding-top: 54px;
+  text-align: center;
+  h2 {
+    color: $whiteColor;
+    font-family: $headFontFamily;
+  }
+}
+.text__center {
+  padding-top: 48px;
+  text-align: center;
+  p {
+    @include p_style;
+    color: $textColor;
+  }
+  padding-bottom: 97px;
+}
+.rect__3col {
+  background: $whiteColor;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 21px;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 61px;
+  padding-bottom: 31px;
+  height: 406px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.rect__title {
+  @include h3_style;
+  color: $headerColor;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 56px;
+}
+.rect__text {
+  @include inblock_p_style;
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 45px;
+  padding-top: 21px;
+}
+.blocks__features {
+  margin-bottom: 140px;
+}
+
+// Scenaries section
+
+.ellipse {
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.15);
+  background-color: $whiteColor;
+  border-radius: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.block__ellipse {
+  padding-top: 100px;
+  flex-direction: column;
+  width: 215px;
+  margin: 0 auto;
+  p {
+    line-height: 20px;
+    margin-top: 26px;
+    @include p_style;
+    color: $textColor;
+  }
+}
+.ellipse__holder {
+  text-align: center;
+}
+.horizontal {
+  margin: auto 0;
+  width: 80px;
+  border: 2px dashed #dcdcdc;
+  border-radius: 2px;
+}
+.scenaries__item {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.scenaries__title {
+  @include h3_style;
+  color: $headerColor;
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 60px;
+}
+.point__text {
+  line-height: 20px;
+  @include p_style;
+  color: $textColor;
+  margin: auto 0;
+}
+.icon__point {
+  margin-right: 30px;
+}
+
+// Downlaod section
+
+.rect__download {
+  background: $whiteColor;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 21px;
+  padding-top: 70px;
+  h2 {
+    color: $headerColor;
+    font-family: $headFontFamily;
+    text-align: center;
+  }
+  height: 651px;
+}
+.rect__download a {
+  text-decoration: none;
+}
+.download__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.download__features {
+  width: 266px;
+  margin: 0 auto;
+  padding-top: 38px;
+}
+.icon__point__download {
+  margin-right: 10px;
+}
+.list__item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.but_windows {
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 203px;
+  height: 54px;
+  background: linear-gradient(155.2deg, $winButColor1 19.76%, $winButColor2 75.42%);
+  box-shadow: 1px 2px 20px rgba(0, 148, 255, 0.58);
+  border-radius: 83px;
+  &:hover {
+    h3 {
+      color: #E4E90D;
+      transition: .3s;
+    }
+  }
+}
+.but_android {
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 203px;
+  height: 54px;
+  background: linear-gradient(155.2deg, $androidButColor1 19.76%, $androidButColor2 75.42%);
+  box-shadow: 1px 2px 20px 0 #7ada80;
+  border-radius: 83px;
+  &:hover {
+    h3 {
+      color: #E4E90D;
+      transition: .3s;
+    }
+  }
+}
+.but_disable {
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 203px;
+  height: 54px;
+  background: none;
+  border-radius: 83px;
+}
+.but-windows__text {
+  @include h3_style;
+  color: $whiteColor;
+  text-decoration: none;
+}
+.disable {
+  color: $textColor;
+}
+
+// Contacts section
+
+.contacts-section {
+  background: $headerColor;
+  margin-top: 185px;
+  padding-bottom: 85px;
+}
+.contacts__block {
+  padding-top: 66px;
+  h3 {
+    @include h3_style;
+    color: $whiteColor;
+    text-align: center;
+  }
+  p {
+    line-height: 20px;
+    margin-top: 26px;
+    @include p_style;
+    color: $whiteColor;
+    text-align: center;
+  }
+}
+.dev-icon__block {
+  padding: 20px 40px 0 40px;
+}
+
+// Footer section
+
+footer {
+  height: 100px;
+}
+.footer__content {
+  flex-direction: column;
+  h3 {
+    @include h3_style;
+    color: $headerColor;
+    text-align: center;
+    margin-top: 20px;
+  }
+  p {
+    line-height: 20px;
+    @include p_style;
+    color: $textColor;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    justify-content: center;
+  }
+  .menu__block {
+    margin: 0;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .horizontal {
+    display: none;
+  }
+  .blocks__features {
+    margin-bottom: 60px;
+  }
+  .rect__download {
+    height: 600px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .download__features {
+    width: 500px;
+  }
+  .dev-icon__block {
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu__block {
+    visibility: hidden;
+  }
+  .main__container {
+    padding-top: 100px;
+  }
+  .logo {
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .block__ellipse {
+    width: 150px;
+  }
+  .ellipse {
+    width: 130px;
+    height: 120px;
+    padding: 15px;
+  }
+  .ellipse__icon {
+    width: 70px;
+    height: auto;
+  }
+  .download__features {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .title__head {
+    padding-top: 80px;
+  }
+  .logo {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .small__settings {
+    flex-direction: column;
+  }
+  .download__features {
+    width: 300px;
+  }
+  .rect__download {
+    height: 650px;
+  }
+  .dev-icon__block {
+  width: 330px;
+  margin: 0 auto;
+  padding-top: 60px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  body {
+    padding: 0;
+  }
+  .container {
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+  }
+}
